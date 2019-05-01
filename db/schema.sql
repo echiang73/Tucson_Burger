@@ -7,5 +7,5 @@ CREATE TABLE burgers
 (
 	id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
 	burger_name varchar(50) NOT NULL,
-	devoured BOOLEAN DEFAULT false
+	pickedup BOOLEAN DEFAULT false
 );

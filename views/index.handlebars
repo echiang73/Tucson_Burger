@@ -1,26 +1,6 @@
-<h1>Burgers!</h1>
+<h1>Welcome to Tucson Burger</h1>
 
-<h2>Burgers Made to Order!</h2>
-
-<ul>
-  {{#each burgers}}
-    {{#unless devoured}}
-      {{> burgers/burger-block devoured=true}}
-    {{/unless}}
-  {{/each}}
-</ul>
-
-<h2>Burgers that are devoured!</h2>
-
-<ul>
-  {{#each burgers}}
-    {{#if devoured}}
-      {{> burgers/burger-block devoured=false}} {{!-- this line not necessary if not deleting--}}
-    {{/if}}
-  {{/each}}
-</ul>
-
-<h2>Add a Burger</h2>
+<h2>Place Order Here</h2>
 <form class="create-form">
 
   <div class="form-group">
@@ -29,10 +9,31 @@
   </div>
 
   {{!-- <div class="form-group">
-    <label for="devoured">Devoured?</label><br>
-    <input type="radio" name="devoured" value="1" checked> Devoured!<br>
-    <input type="radio" name="devoured" value="0"> NotDevoured
+    <label for="pickedup">Pickedup?</label><br>
+    <input type="radio" name="pickedup" value="1" checked> Pickedup!<br>
+    <input type="radio" name="pickedup" value="0"> NotPickedup
   </div> --}}
 
-  <button type="submit">Add Burger</button>
+  <button type="submit">Place Order</button>
 </form>
+
+<h2>Order Up - Pick Up Here</h2>
+
+<ul>
+  {{#each burgers}}
+    {{#unless pickedup}}
+      {{> burgers/burger-block pickedup=true}}
+    {{/unless}}
+  {{/each}}
+</ul>
+
+<h2>Dine at Table</h2>
+
+<ul>
+  {{#each burgers}}
+    {{#if pickedup}}
+      {{> burgers/burger-block pickedup=false}} {{!-- this line not necessary if not deleting--}}
+    {{/if}}
+  {{/each}}
+</ul>
+
