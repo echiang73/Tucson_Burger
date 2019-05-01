@@ -26,7 +26,7 @@ $(function() {
     event.preventDefault();
 
     var newBurger = {
-      name: $("#bur").val().trim() // removed ,
+      burger_name: $("#bur").val().trim() // removed ,
       // pickedup: $("[name=pickedup]:checked").val().trim()
     };
 

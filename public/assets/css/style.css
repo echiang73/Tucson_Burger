@@ -1,7 +1,78 @@
+html,
+body {
+width: 100%;
+height: 100%;
+}
+.tucsonBurger {
+  width: 100%;
+  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  position: relative;
+}
+.tucsonBurger::before {
+  background-image: url(../images/background.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-color:black;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  opacity: 0.4;
+}
+
+#pepper-logo{
+  width: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  float: left;
+}
+.display-4{
+  color: blue;
+  text-align: center;
+  font-weight: bolder;
+  background: -webkit-linear-gradient(top, rgb(0, 150, 255), purple);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  padding: 15px 0;
+}
+.lead{
+  color: yellow;
+  text-align: center;
+}
+
+.order-burger, .change-pickedup, .delete-burger{
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+}
+
+.jumbotron{
+  padding: 2px 0 2px 0;
+  background-image: linear-gradient(to bottom right, orange , red);
+}
+
+.columnHeader{
+  font-family: 'Raleway', sans-serif;
+  font-weight: bolder;
+  color: red;
+}
+
+
+
 li {
+  font-family: 'Over the Rainbow', cursive;
+  font-size: 20px;
   padding: 5px;
   margin: 5px;
-  background: #faebd7;
+  background: #E9ECEF;
 }
 
 .label {
@@ -16,4 +87,9 @@ li {
 
 .form-group {
   margin-bottom: 5px;
+}
+
+ol, ul{
+  /* margin: 0 0 0 0; */
+  padding: 0 0 0 20px;
 }
