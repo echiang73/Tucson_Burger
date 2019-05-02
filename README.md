@@ -58,6 +58,8 @@ All the recommended files and directories should look like the following structu
 │       ├── img
 │       │    └── background.jpg
 │       │    └── hot.png
+│       │    └── mobilepreview.gif
+│       │    └── webpreview.gif
 │       └── js
 │            └── burgers.js
 ├── server.js
@@ -81,6 +83,6 @@ https://github.com/echiang73/Tucson_Burger
 
 ## Here are the previews of the web application:
 
-![](app/public/assets/images/webpreview.gif "gif")
+![](public/assets/images/webpreview.gif "gif")
 
-![](app/public/assets/images/mobilepreview.gif "gif")
+![](public/assets/images/mobilepreview.gif "gif")
