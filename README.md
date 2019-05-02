@@ -85,4 +85,6 @@ https://github.com/echiang73/Tucson_Burger
 
 ![](public/assets/images/webpreview.gif "gif")
 
+![](public/assets/images/webpreview2.gif "gif")
+
 ![](public/assets/images/mobilepreview.gif "gif")
