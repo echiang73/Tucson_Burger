@@ -1,4 +1,4 @@
-# Tucson_Burger
+# Tucson_Burger :hamburger: :hot_pepper:
 Welcome to Tucson Burger, the "hottest" burger joint in this part of the Southwest! Tucson Burger is a fun, dynamic, user-interactive full-stack web app that allows the user to order a burger, pick up the burger (or send back to kitchen), or devour it!  Responsive web design with media queries is incorporated, so the burger ordered on the beautiful web app looks as delicious on your mobile device as on the larger desktop display.
 
 ## Technical overview
