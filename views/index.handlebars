@@ -13,35 +13,37 @@
       </div> --}}
     </div>
     <div class="row justify-content-sm-center">
-        <p class="lead">Welcome to Old Pueblo's "Hottest" Burger Joint!</p>
+      <p class="lead">Welcome to Old Pueblo's "Hottest" Burger Joint!</p>
     </div>
   </div>
 </div>
 
 <div class="container">
   <div class="row">
-    <div class="col-4">
-      <div class="card">
+    <div class="col-lg-4">
+      <div class="card" id="card1">
         <div class="card-body">
           {{!-- <h5 class="card-title">Card title</h5> --}}
           <h3 class="columnHeader">Place Order Here</h3>
+          <hr>
 
-          Order a favorite:
+          <div class="instructions">Order a favorite!</div>
           <ol>
-            <li>Old Pueblo Burger</li>
-            <li>Tucson Heat Burger</li>
-            <li>Wildcat Whopper</li>
-            <li>Valley Fever Burger</li>
-            <li>Jucy Lucy Burger</li>
+            <li>Old Pueblo Burger: $8.00</li>
+            <li>Tucson Heat Burger: $8.50</li>
+            <li>Wildcat Whopper: $7.50</li>
+            <li>Valley Fever Burger: $9.00</li>
+            <li>Jucy Lucy Burger: $9.50</li>
           </ol>
-          <br>
-          Or make your own burger:
+          <hr>
+
+          Or make your own burger: $10.00
 
           <form class="create-form">
 
             <div class="form-group">
               <label for="bur">Burger Name:</label>
-              <input type="text" id="bur" burger_name="burger_name">
+              <input type="text" id="bur" burger_name="burger_name" placeholder=" Build-to-order">
             </div>
 
             {{!-- <div class="form-group">
@@ -55,13 +57,15 @@
         </div>
       </div>
     </div>
-    <div class="col-4">
 
-      <div class="card">
+    <div class="col-lg-4">
+      <div class="card" id="card2">
         <div class="card-body">
           {{!-- <h5 class="card-title">Card title</h5> --}}
-          <h3 class="columnHeader">Order Up - Pick Up Here</h3>
+          <h3 class="columnHeader">Pick Up Here</h3>
+          <hr>
 
+          <div class="instructions">Order up!</div>
           <ul>
             {{#each burgers}}
             {{#unless pickedup}}
@@ -69,16 +73,19 @@
             {{/unless}}
             {{/each}}
           </ul>
+          <hr>
         </div>
       </div>
-
     </div>
-    <div class="col-4">
-      <div class="card">
+
+    <div class="col-lg-4">
+      <div class="card" id="card3">
         <div class="card-body">
           {{!-- <h5 class="card-title">Card title</h5> --}}
           <h3 class="columnHeader">Dine at Table</h3>
+          <hr>
 
+          <div class="instructions">Devour your burger!</div>
           <ul>
             {{#each burgers}}
             {{#if pickedup}}
@@ -86,8 +93,10 @@
             {{/if}}
             {{/each}}
           </ul>
+          <hr>
         </div>
       </div>
     </div>
+  
   </div>
 </div>
