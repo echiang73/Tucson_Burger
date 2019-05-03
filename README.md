@@ -77,7 +77,7 @@ All the recommended files and directories should look like the following structu
 * Eddie Chiang
 * Click on the deployed app on Heroku!
 https://pacific-springs-44052.herokuapp.com/
-https://pacific-springs-44052.herokuapp.com/
+
 * Click on the GitHub link to view code!
 https://github.com/echiang73/Tucson_Burger
 
