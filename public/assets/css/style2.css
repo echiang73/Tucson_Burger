@@ -63,9 +63,9 @@ height: 100%;
   text-align: center;
 }
 
-.bur{
+#bur{
   border-radius: 5px;
-  /* border: 1px solid black; */
+  border: 1px solid black;
 }
 .order-burger, .change-pickedup, .delete-burger{
   font-family: 'Raleway', sans-serif;
@@ -110,7 +110,7 @@ height: 100%;
 }
 li {
   font-family: 'Over the Rainbow', cursive;
-  font-size: 18px;
+  font-size: 20px;
   padding: 5px;
   margin: 5px;
   background: #E9ECEF;
@@ -122,33 +122,19 @@ li {
   font-weight: bold;
 }
 
-/* .create-update-form {
+.create-update-form {
   padding: 5px;
   margin: 5px;
   background: aqua;
-} */
+}
 
 .form-group {
-  margin-bottom: 8px;
+  margin-bottom: 5px;
 }
 
 ol, ul{
   /* margin: 0 0 0 0; */
   padding: 0 0 0 20px;
-}
-
-.favBurger{
-  border: 0px solid #E9ECEF;
-  background: rgb(233, 236, 239, 0);
-  float: left;
-}
-.div-clear {
-  clear: left;
-}
-.BTO{
-  border: 1px solid black;
-  border-radius: 5px;
-  margin-top: 10px;
 }
 
 @media only screen and (max-width : 992px) {
